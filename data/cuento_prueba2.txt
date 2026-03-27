@@ -1,0 +1,17 @@
+========================================
+CUENTO CREADO EN STORYFLOW
+========================================
+Titulo: prueba2
+Idea principal: hola
+Personajes: hola
+Escenario: hola
+
+Inicio:
+hola
+
+Conflicto:
+hola
+
+Desenlace:
+hola
+========================================

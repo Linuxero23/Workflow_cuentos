@@ -1,0 +1,17 @@
+========================================
+CUENTO CREADO EN STORYFLOW
+========================================
+Titulo: El bosque magico
+Idea principal: Una nina encuentra un portal
+Personajes: Luna, un zorro sabio
+Escenario: Un bosque encantado
+
+Inicio:
+Luna entra al bosque buscando respuestas
+
+Conflicto:
+Una sombra intenta cerrar el portal
+
+Desenlace:
+Luna salva el portal y regresa transformada
+========================================
