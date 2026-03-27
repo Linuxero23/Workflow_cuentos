@@ -19,6 +19,7 @@ public class ArchivoUtil {
             directorio.mkdirs();
         }
 
+        // El nombre del archivo se genera a partir del titulo para hacerlo mas facil de ubicar.
         String nombreArchivo = "cuento_" + normalizarTitulo(cuento.getTitulo()) + ".txt";
         File archivo = new File(directorio, nombreArchivo);
 

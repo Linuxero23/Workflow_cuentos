@@ -1,14 +1,10 @@
 # StoryFlow
 
-StoryFlow es una aplicacion de consola en Java para crear cuentos paso a paso.
+StoryFlow es una aplicacion de consola en Java para crear cuentos paso a paso mediante un workflow sencillo.
 
-## Que hace el proyecto
+## Objetivo
 
-- solicita el titulo y cada parte del cuento por consola
-- guia al usuario por las etapas del workflow
-- valida que los campos no queden vacios
-- muestra el cuento completo al finalizar
-- guarda el resultado en un archivo `.txt` dentro de `data/`
+El proyecto ayuda a construir un cuento de forma ordenada, guiando al usuario por cada etapa y guardando el resultado final en consola y en un archivo de texto.
 
 ## Estructura del proyecto
 
@@ -25,6 +21,8 @@ StoryFlow/
 |       |-- EtapaCuento.java
 |       `-- WorkflowCuento.java
 |-- data/
+|-- out/
+|-- .gitignore
 `-- README.md
 ```
 
@@ -43,3 +41,7 @@ java -cp out app.Main
 ## Donde se guarda el archivo
 
 El cuento se guarda automaticamente en la carpeta `data/` con un nombre como `cuento_mi_historia.txt`.
+
+## Nota
+
+Esta es una primera version por consola, pensada para aprender y dejar una base clara para futuras mejoras.

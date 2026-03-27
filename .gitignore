@@ -1,0 +1,6 @@
+out/
+*.class
+
+# Archivos comunes del sistema
+Thumbs.db
+.DS_Store

@@ -20,38 +20,7 @@ public class Main {
 
             while (!workflow.estaFinalizado()) {
                 mostrarEtapaActual(workflow.getEtapaActual());
-
-                switch (workflow.getEtapaActual()) {
-                    case IDEA:
-                        cuento.setIdeaPrincipal(leerCampoNoVacio(scanner,
-                                "Escribe la idea principal del cuento: "));
-                        break;
-                    case PERSONAJES:
-                        cuento.setPersonajes(leerCampoNoVacio(scanner,
-                                "Describe los personajes principales: "));
-                        break;
-                    case ESCENARIO:
-                        cuento.setEscenario(leerCampoNoVacio(scanner,
-                                "Describe el escenario donde sucede la historia: "));
-                        break;
-                    case INICIO:
-                        cuento.setInicio(leerCampoNoVacio(scanner,
-                                "Escribe como inicia la historia: "));
-                        break;
-                    case CONFLICTO:
-                        cuento.setConflicto(leerCampoNoVacio(scanner,
-                                "Escribe el conflicto principal: "));
-                        break;
-                    case DESENLACE:
-                        cuento.setDesenlace(leerCampoNoVacio(scanner,
-                                "Escribe el desenlace del cuento: "));
-                        break;
-                    case FINALIZADO:
-                        break;
-                    default:
-                        throw new IllegalStateException("Etapa no reconocida.");
-                }
-
+                capturarInformacionDeEtapa(scanner, cuento, workflow.getEtapaActual());
                 workflow.avanzarEtapa();
             }
 
@@ -86,6 +55,39 @@ public class Main {
         System.out.println("----------------------------------------");
         System.out.println("Etapa actual: " + etapa);
         System.out.println("----------------------------------------");
+    }
+
+    private static void capturarInformacionDeEtapa(Scanner scanner, Cuento cuento, EtapaCuento etapaActual) {
+        switch (etapaActual) {
+            case IDEA:
+                cuento.setIdeaPrincipal(leerCampoNoVacio(scanner,
+                        "Escribe la idea principal del cuento: "));
+                break;
+            case PERSONAJES:
+                cuento.setPersonajes(leerCampoNoVacio(scanner,
+                        "Describe los personajes principales: "));
+                break;
+            case ESCENARIO:
+                cuento.setEscenario(leerCampoNoVacio(scanner,
+                        "Describe el escenario donde sucede la historia: "));
+                break;
+            case INICIO:
+                cuento.setInicio(leerCampoNoVacio(scanner,
+                        "Escribe como inicia la historia: "));
+                break;
+            case CONFLICTO:
+                cuento.setConflicto(leerCampoNoVacio(scanner,
+                        "Escribe el conflicto principal: "));
+                break;
+            case DESENLACE:
+                cuento.setDesenlace(leerCampoNoVacio(scanner,
+                        "Escribe el desenlace del cuento: "));
+                break;
+            case FINALIZADO:
+                break;
+            default:
+                throw new IllegalStateException("Etapa no reconocida.");
+        }
     }
 
     private static String leerCampoNoVacio(Scanner scanner, String mensaje) {

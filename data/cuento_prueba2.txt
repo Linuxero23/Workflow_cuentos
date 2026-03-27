@@ -1,17 +1,17 @@
 ========================================
 CUENTO CREADO EN STORYFLOW
 ========================================
-Titulo: prueba2
-Idea principal: hola
-Personajes: hola
-Escenario: hola
+Titulo: Prueba2
+Idea principal: Idea simple
+Personajes: Ana y Leo
+Escenario: Un pueblo pequeno
 
 Inicio:
-hola
+Todo comienza en una tarde lluviosa
 
 Conflicto:
-hola
+Pierden un mapa importante
 
 Desenlace:
-hola
+Recuperan el mapa y aprenden a trabajar juntos
 ========================================

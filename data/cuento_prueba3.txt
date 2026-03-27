@@ -1,0 +1,17 @@
+========================================
+CUENTO CREADO EN STORYFLOW
+========================================
+Titulo: prueba3
+Idea principal: asd
+Personajes: asdas
+Escenario: asdasd
+
+Inicio:
+asd
+
+Conflicto:
+asd
+
+Desenlace:
+asd
+========================================
